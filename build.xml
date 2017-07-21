@@ -1,0 +1,16 @@
+<project name="Livewire" basedir="." default="createTables">
+<!-- directory where bat file reside -->
+<property name="buildSQL" value="D:\Garima1" />
+
+
+<target name="createTables">
+<echo>${buildSQL}</echo>
+
+<exec dir="${buildSQL}" executable="cmd" >
+<arg line="/c runningorder.bat"/> 
+</exec> 
+</target>
+
+</project> 
+
+
